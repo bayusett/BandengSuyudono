@@ -1,0 +1,93 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.page-content {
+    margin-top: 100px;
+}
+
+footer {
+    border-top: 1px solid #e4e4e4;
+    margin-top: 120px;
+
+    p {
+        color: #979797;
+    }
+}
+
+.to-top {
+    background: #04a102;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s;
+}
+
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.form-control {
+    background-color: #f3f3f3;
+}
+
+/* for desktop */
+.whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 16px;
+    left: 15px;
+    background-color: #04a102;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 16px;
+}
+/* for mobile */
+@media screen and (max-width: 767px) {
+    .whatsapp-icon {
+        margin-top: 10px;
+    }
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+}
+
+.checkout-form label {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.checkout-form input {
+    font-size: 14px;
+    padding: 5px;
+    font-weight: 400;
+}
